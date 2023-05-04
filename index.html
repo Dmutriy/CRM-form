@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hayali</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="" />
+  </head>
+
+  <body>
+    <div class="page-wrapper position-relative">
+      <header class="header position-absolute w-100">
+        <div class="container">
+          <div
+            class="header__wrapper flex justify-between align-center"
+          >
+            <a href="#" class="logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <a href="#sale" class="btn sm-scroll"
+              >Скористатись знижкою</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section
+          class="first-screen flex flex-column justify-center"
+        >
+          <div
+            class="fs-img fs-img-4 position-absolute sm-hide"
+          >
+            <img src="images/4.png" alt="" />
+          </div>
+          <div class="fs-img fs-img-1 position-absolute">
+            <img src="images/1.png" alt="" />
+          </div>
+          <div class="aside-img-1 position-absolute">
+            <img src="images/2.png" alt="" />
+          </div>
+          <div class="aside-img-2 position-absolute">
+            <img src="images/3.png" alt="" />
+          </div>
+          <div class="container">
+            <div
+              class="fs-content flex justify-end position-relative"
+            >
+              <div class="fs-content-item w-55">
+                <span class="main-title text--uppercase"
+                  >Отримайте знижку <br />на улюблені
+                  солодощі <br />за нашим
+                  <span>промокодом!</span></span
+                >
+                <p>
+                  Введіть Промокод <span>SALE10</span>
+                  <br />На <span>Нашому Сайті </span>
+                </p>
+                <p>
+                  Та Отримайте 10% Знижку <br />На Східні
+                  Солодощі
+                </p>
+                <p>
+                  <span
+                    >Які Не Приймаюсь Участь В Акціях!</span
+                  >
+                </p>
+                <div class="btn-container mt-5 flex">
+                  <a
+                    href="#sale"
+                    class="btn btn--red sm-scroll"
+                    >Скористатись знижкою</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="section countdown position-relative"
+        >
+          <div
+            class="aside-img-3 position-absolute sm-hide"
+          >
+            <img src="images/5.png" alt="" />
+          </div>
+          <div class="container">
+            <!-- Таймер -->
+            <div
+              class="timer-container flex justify-center align-center"
+            >
+              <ul id="timer" class="timer flex">
+                <li class="time-num">
+                  <span class="hours">00</span>
+                </li>
+                <li class="seperator">:</li>
+                <li class="time-num">
+                  <span class="minutes">00</span>
+                </li>
+                <li class="seperator">:</li>
+                <li class="time-num">
+                  <span class="seconds">00</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Таймер END-->
+            <span
+              class="h3 timer-subtitle text--uppercase text--center"
+              >До кінця акції</span
+            >
+          </div>
+        </section>
+
+        <section class="products position-relative">
+          <div
+            class="aside-img-4 position-absolute sm-hide"
+          >
+            <img src="images/6.png" alt="" />
+          </div>
+          <div class="container">
+            <div
+              class="products__wrapper grid col-3 sm-col-2 mob-col-1"
+            >
+              <div class="item">
+                <div class="product-card">
+                  <div
+                    class="product-img mb-2 js--popup"
+                    data-modal="product-info-1"
+                  >
+                    <img
+                      src="images/product/1.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="hover-content position-absolute flex align-center justify-center flex-column"
+                    >
+                      <span>переглянути наповнення</span>
+                      <div class="hover-icon">
+                        <img
+                          src="images/icons/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >НАБІР ДЛЯ НЕЇ ПРИВАБЛИВОЇ</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">870 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >975 ГРН</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Product-info popup -->
+                  <div
+                    class="popup-window"
+                    id="product-info-1"
+                  >
+                    <span class="close-popup"></span>
+                    <div class="popup__content">
+                      <span>У наборі 7 позицій:</span>
+                      <ol class="mt-3 mb-3">
+                        <li>
+                          Подарункова асорті пішманіє
+                          (фісташка, ваніль, какао) 250г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком кавуна
+                          та дині 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком
+                          апельсина та полуниці 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком персика
+                          та зеленого яблука 210г
+                        </li>
+                        <li>
+                          Пішманіє з полуницею в глазурі
+                          190г
+                        </li>
+                        <li>
+                          Кава для турки Mehmet Efendi 100г
+                        </li>
+                        <li>
+                          Турецький Чай "Чайкур Filiz" 200г
+                        </li>
+                      </ol>
+                      <span> Вага – 1270 г </span>
+                      <span
+                        >Термін зберігання: 6 місяців</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div
+                    class="product-img mb-2 js--popup"
+                    data-modal="product-info-2"
+                  >
+                    <img
+                      src="images/product/2.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="hover-content position-absolute flex align-center justify-center flex-column"
+                    >
+                      <span>переглянути наповнення</span>
+                      <div class="hover-icon">
+                        <img
+                          src="images/icons/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >НАБІР ДЛЯ НЕЇ яскравої</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">1100 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >1244 ГРН</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Product-info popup -->
+                  <div
+                    class="popup-window"
+                    id="product-info-2"
+                  >
+                    <span class="close-popup"></span>
+                    <div class="popup__content">
+                      <span>У наборі 7 позицій:</span>
+                      <ol class="mt-3 mb-3">
+                        <li>Чурчхела турецька 400г</li>
+                        <li>
+                          Подарункова асорті пішманіє
+                          (фісташка, ваніль, какао) 250г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком кавуна
+                          та дині 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком кокоса
+                          та зеленого яблука 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком
+                          апельсина та полуниці 210г
+                        </li>
+                        <li>
+                          Пішманіє з апельсином в глазурі
+                          190г
+                        </li>
+                        <li>
+                          Турецький Чай "Чайкур Altinbas"
+                          200г
+                        </li>
+                      </ol>
+                      <span>Вага – 1770 г</span>
+                      <span
+                        >Термін зберігання: 6 місяців</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div
+                    class="product-img mb-2 js--popup"
+                    data-modal="product-info-3"
+                  >
+                    <img
+                      src="images/product/3.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="hover-content position-absolute flex align-center justify-center flex-column"
+                    >
+                      <span>переглянути наповнення</span>
+                      <div class="hover-icon">
+                        <img
+                          src="images/icons/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >НАБІР ДЛЯ НЕЇ чарівної</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">1500 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >1691 ГРН</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Product-info popup -->
+                  <div
+                    class="popup-window"
+                    id="product-info-3"
+                  >
+                    <span class="close-popup"></span>
+                    <div class="popup__content">
+                      <span>У наборі 10 позицій:</span>
+                      <ol class="mt-3 mb-3">
+                        <li>Лукум турецький MIX 300г</li>
+                        <li>
+                          Подарункова асорті пішманіє
+                          (фісташка, ваніль, какао) 250г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком граната
+                          та дині 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком кокоса
+                          та апельсина 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком полуниці
+                          та зеленого яблука 210г
+                        </li>
+                        <li>
+                          Пішманіє з кокосом в глазурі 190г
+                        </li>
+                        <li>
+                          Пішманіє з полуницею в глазурі
+                          190г
+                        </li>
+                        <li>
+                          Пішманіє з персиком в глазурі 190г
+                        </li>
+                        <li>
+                          Пішманіє з апельсином в глазурі
+                          190г
+                        </li>
+                        <li>
+                          Мелена кава Osso в тубусі 200г
+                          *(на вибір)
+                        </li>
+                      </ol>
+                      <span>Вага – 2240 г</span>
+                      <span
+                        >Термін зберігання: 6 місяців</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div
+                    class="product-img mb-2 js--popup"
+                    data-modal="product-info-4"
+                  >
+                    <img
+                      src="images/product/4.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="hover-content position-absolute flex align-center justify-center flex-column"
+                    >
+                      <span>переглянути наповнення</span>
+                      <div class="hover-icon">
+                        <img
+                          src="images/icons/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >НАБІР "КОХАННЯ - ЦЕ...</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">660 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >735 ГРН</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Product-info popup -->
+                  <div
+                    class="popup-window"
+                    id="product-info-4"
+                  >
+                    <span class="close-popup"></span>
+                    <div class="popup__content">
+                      <span>У наборі 5 позицій:</span>
+                      <ol class="mt-3 mb-3">
+                        <li>
+                          Подарункова асорті пішманіє
+                          (фісташка, ваніль, какао) 250г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком кавуна
+                          та дині 210г
+                        </li>
+                        <li>
+                          Пішманіє асорті зі смаком полуниці
+                          та зеленого яблука 210г
+                        </li>
+                        <li>
+                          Турецький Чай "Чайкур Alt?nbas"
+                          200г
+                        </li>
+                        <li>
+                          Кава для турки Mehmet Efendi 100г
+                        </li>
+                      </ol>
+                      <span>Вага – 970 г</span>
+                      <span
+                        >Термін зберігання: 6 місяців</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div
+                    class="product-img mb-2 js--popup"
+                    data-modal="product-info-5"
+                  >
+                    <img
+                      src="images/product/5.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="hover-content position-absolute flex align-center justify-center flex-column"
+                    >
+                      <span>переглянути наповнення</span>
+                      <div class="hover-icon">
+                        <img
+                          src="images/icons/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >НАБІР "СОЛОДКА МРІЯ"</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">1180 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >1320 ГРН</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Product-info popup -->
+                  <div
+                    class="popup-window"
+                    id="product-info-5"
+                  >
+                    <span class="close-popup"></span>
+                    <div class="popup__content">
+                      <span>У наборі 10 позицій:</span>
+                      <ol class="mt-3 mb-3">
+                        <li>
+                          Пішманіє асорті (ваніль, какао,
+                          фісташка) 250 г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з кокосом в глазурі 190 г
+                          - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з апельсином в глазурі
+                          190 г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з персиком в глазурі 190
+                          г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з полуницею в глазурі 190
+                          г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з кокосом 210г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з динею 210г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з гранатом 210г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з апельсином 210г - 1шт.
+                        </li>
+                        <li>
+                          Пішманіє з полуницею 210г - 1шт.
+                        </li>
+                      </ol>
+                      <span>Вага – 2060 г</span>
+                      <span
+                        >Термін зберігання: 6 місяців</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div
+                    class="product-img mb-2 js--popup"
+                    data-modal="product-info-6"
+                  >
+                    <img
+                      src="images/product/6.jpg"
+                      alt=""
+                    />
+                    <div
+                      class="hover-content position-absolute flex align-center justify-center flex-column"
+                    >
+                      <span>переглянути наповнення</span>
+                      <div class="hover-icon">
+                        <img
+                          src="images/icons/1.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >НАБІР "СХІДНА НАСОЛОДА"</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">800 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >903 ГРН</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Product-info popup -->
+                  <div
+                    class="popup-window"
+                    id="product-info-6"
+                  >
+                    <span class="close-popup"></span>
+                    <div class="popup__content">
+                      <span>У наборі 7 позицій:</span>
+                      <ol class="mt-3 mb-3">
+                        <li>
+                          Пішманіє з ваніллю та фісташкою
+                          200г - 1 шт.
+                        </li>
+                        <li>
+                          Пішманіє з кокосом 210 г - 1 шт.
+                        </li>
+                        <li>
+                          Пішманіє асорті (ваніль та какао)
+                          210 г - 1 шт.
+                        </li>
+                        <li>
+                          Пішманіє асорті (диня та гранат)
+                          210 г - 1 шт.
+                        </li>
+                        <li>
+                          Пішманіє з полуницею 210 г - 1 шт.
+                        </li>
+                        <li>
+                          Пішманіє з зеленим яблуком 210г -
+                          1 шт.
+                        </li>
+                        <li>
+                          Пішманіє з апельсином 210г - 1 шт.
+                        </li>
+                      </ol>
+                      <span>Вага – 1460 г</span>
+                      <span
+                        >Термін зберігання: 6 місяців</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/7.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >ПІШМАНІЄ АСОРТІ</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">144 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >160 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/8.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >Пішманіє з ваніллю та фісташкою</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">117 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >130 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/9.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >Турецький лукум "MIX 2"</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">295 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >327 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/10.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >Турецький лукум "MIX 4",</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">295 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >327 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/11.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >чурчхела "Виноград",</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">288 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >320 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/12.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >чурчхела "Гранат"</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">288 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >320 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/13.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >Пішманіє з апельсином</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">290 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >370 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/14.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >Пішманіє з кокосом</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">290 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >370 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/15.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >Пішманіє з полуницею</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">290 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >370 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/16.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >ПІШМАНІЄ З персиком</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">290 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >370 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/17.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >ПІШМАНІЄ З Какао</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">290 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >370 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-card">
+                  <div class="product-img mb-2">
+                    <img
+                      src="images/product/18.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <span
+                    class="h3 product-title text--uppercase text--center"
+                    >ПІШМАНІЄ З гранатом</span
+                  >
+                  <div class="price-wrapper flex mt-2">
+                    <div class="price-item w-50">
+                      <span class="price">290 ГРН</span>
+                    </div>
+                    <div class="price-item w-50">
+                      <span class="price old-price"
+                        >370 ГРН</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="section sale position-relative"
+          id="sale"
+        >
+          <div class="aside-img-5 position-absolute">
+            <img src="images/7.png" alt="" />
+          </div>
+          <div class="aside-img-6 position-absolute">
+            <img src="images/3.png" alt="" />
+          </div>
+          <div class="container">
+            <div
+              class="sale__wrapper grid col-2 align-center sm-col-1"
+            >
+              <div class="item">
+                <div
+                  class="sale-info flex flex-column align-center"
+                >
+                  <span
+                    class="sale-title text--uppercase text--center"
+                    >Залиш заявку <br />та отримай</span
+                  >
+                  <span
+                    class="sale-index text--uppercase text--center"
+                    >10%</span
+                  >
+                  <span
+                    class="sale-index-text text--uppercase text--center"
+                    >знижки</span
+                  >
+                  <p>
+                    на товари Які Не Приймаюсь Участь ВЯкі
+                    Не Приймаюсь Участь В Акціях!!
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div
+                  class="sale-feedback position-relative"
+                >
+                  <a href="#" class="logo">
+                    <img src="images/logo.png" alt="" />
+                  </a>
+                  <!-- <form action="">
+                    <div class="input-wrapper mb-5">
+                      <input
+                        type="text"
+                        placeholder="ВАШЕ ІМ'Я"
+                      />
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        placeholder="НОМЕР ТЕЛЕФОНУ"
+                      />
+                    </div>
+                    <div class="btn-container mt-5">
+                      <button class="btn btn--red">
+                        ЗАЛИШИТИ ЗАЯВКУ
+                      </button>
+                    </div> -->
+                  </form>
+                  <form id="myForm">
+                    <div class="input-wrapper mb-5">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="ВАШЕ ІМ'Я"
+                      />
+                    </div>
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="НОМЕР ТЕЛЕФОНУ"
+                      />
+                    </div>
+                    <div class="btn-container mt-5">
+                      <button
+                        class="btn btn--red"
+                        type="submit"
+                      >
+                        ЗАЛИШИТИ ЗАЯВКУ
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="popup-overlay"></div>
+    </div>
+
+    <!-- Scripts CRM -->
+
+    <!-- Підключення Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- JavaScript-код для обробки відправки форми -->
+    <script>
+      // Отримання посилання на форму
+      const form = document.querySelector("#myForm");
+
+      // Додавання події "submit" до форми
+      form.addEventListener("submit", function (event) {
+        // Зупиняємо стандартну поведінку форми
+        event.preventDefault();
+
+        // Отримання значень полів форми
+        const name = document.querySelector(
+          'input[name="name"]'
+        ).value;
+        const phone = document.querySelector(
+          'input[name="phone"]'
+        ).value;
+
+        // Підготовка даних для відправки
+   const data = {
+      form: "vcpf8t66SEnVvwxWpcqB4FTAN1wZdpsbUAt-E5QoFoRfDOEqRvIMiz3W6qAtgwFcBdL3U_ys9p",
+      fName: name,
+      phone: phone
+    };
+
+        // Відправка POST-запиту з використанням Axios
+        axios
+          .post(
+            "https://hayali.salesdrive.me/handler/",
+            data
+          )
+          .then(function (response) {
+            // Обробка успішної відповіді від сервера
+            console.log(response.data);
+            // Додаткові дії після відправки заявки, якщо потрібно
+          })
+          .catch(function (error) {
+            // Обробка помилки при відправці до сервера
+            console.error(error);
+            // Додаткові дії в разі невдалої відправки заявки, якщо потрібно
+          });
+      });
+    </script>
+
+    <!-- Scripts  -->
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
