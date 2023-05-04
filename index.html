@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="" />
+    <script src="js/send.js"></script>
   </head>
 
   <body>
@@ -971,7 +972,8 @@
                         ЗАЛИШИТИ ЗАЯВКУ
                       </button>
                     </div> -->
-                  </form>
+                  <!-- </form> -->
+
                   <form id="myForm">
                     <div class="input-wrapper mb-5">
                       <input
@@ -996,7 +998,23 @@
                       </button>
                     </div>
                   </form>
+                  <!-- <div><script id="salesdrive_forms_params_1">var salesdrive_forms_params_1 = {"id": "1", "hash": "Emzge9KIM7_lSKiIdyh5mwlb6e_J3rME", "modal": "n", "locale": "ua", "defaults": {"submit": "", "sd-form-title": "", "lName": "", "phone": ""}};</script><script forms-id="1" id="salesdriveforms_script" async="async" src="https://static.salesdrive.me/salesdriveforms/assets/js/salesdriveforms.js"></script></div> -->
                 </div>
+                <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+                <!-- <script>
+                  $(document).ready(function () {
+                    $("#myForm").submit(function (e) {
+                      e.preventDefault(); // prevent form submission
+                      $.post(
+                        "send.php",
+                        $(this).serialize(),
+                        function (response) {
+                          console.log(response); // handle server response here
+                        }
+                      );
+                    });
+                  });
+                </script> -->
               </div>
             </div>
           </div>
@@ -1011,7 +1029,61 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- JavaScript-код для обробки відправки форми -->
-<script>
+
+    <script>
+      // Отримання посилання на форму
+      const form = document.querySelector("#myForm");
+
+      // Додавання події "submit" до форми
+      form.addEventListener("submit", function (event) {
+        // Зупиняємо стандартну поведінку форми
+        event.preventDefault();
+
+        // Отримання значень полів форми
+        const name = document.querySelector(
+          'input[name="name"]'
+        ).value;
+        const phone = document.querySelector(
+          'input[name="phone"]'
+        ).value;
+
+        // Підготовка даних для відправки
+        const data = {
+          form: "vcpf8t66SEnVvwxWpcqB4FTAN1wZdpsbUAt-E5QoFoRfDOEqRvIMiz3W6qAtgwFcBdL3U_ys9p",
+          fName: name,
+          phone: phone,
+        };
+
+        const jsonData = JSON.stringify(data); // переводимо об'єкт у формат JSON
+
+        // Встановлення налаштувань для CORS-запиту
+        const config = {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*", // Замініть '*' на URL вашого сервера
+          },
+        };
+
+        // Відправка POST-запиту
+        axios
+          .post(
+            "https://hayali.salesdrive.me/handler/",
+            data,
+            config
+          )
+          .then(function (response) {
+            // Обробка успішної відповіді від сервера
+            console.log(response.data);
+            // Додаткові дії після відправки форми, якщо потрібно
+          })
+          .catch(function (error) {
+            // Обробка помилки при відправці форми
+            console.error(error);
+            // Додаткові дії в разі невдалої відправки форми, якщо потрібно
+          });
+      });
+    </script>
+    <!-- <script>
   const form = document.querySelector('#myForm');
 
 form.addEventListener('submit', function(event) {
@@ -1048,7 +1120,7 @@ form.addEventListener('submit', function(event) {
   });
 });
 
-</script>
+</script> -->
     <!-- Scripts  -->
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/jquery.countdown.js"></script>
