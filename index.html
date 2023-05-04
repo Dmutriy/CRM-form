@@ -1042,7 +1042,13 @@ console.log('jsonData', jsonData);
     const apiUrl = 'https://hayali.salesdrive.me/handler/';
 
     // Відправка POST-запиту через проксі-сервер
-    axios.post( apiUrl, jsonData)
+    axios.post( apiUrl, {
+  "form": "vcpf8t66SEnVvwxWpcqB4FTAN1wZdpsbUAt-E5QoFoRfDOEqRvIMiz3W6qAtgwFcBdL3U_ys9p",
+  "lName": "Шевченко",
+  "fName": "Тарасик",
+  "phone": "+380992904110",
+  "email": "cobzar@mail.com"
+})
       .then(function(response) {
         // Обробка успішної відповіді від сервера
         console.log(response.data);
