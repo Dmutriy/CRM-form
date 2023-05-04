@@ -1042,7 +1042,7 @@ console.log('jsonData', jsonData);
     const apiUrl = 'https://hayali.salesdrive.me/handler/';
 
     // Відправка POST-запиту через проксі-сервер
-    axios.post(proxyUrl + apiUrl, jsonData)
+    axios.post( apiUrl, jsonData)
       .then(function(response) {
         // Обробка успішної відповіді від сервера
         console.log(response.data);
