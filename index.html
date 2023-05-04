@@ -1035,7 +1035,7 @@ form.addEventListener('submit', function(event) {
   // Встановлення URL-адреси запиту
   const apiUrl = 'https://hayali.salesdrive.me/handler/';
 
-  axios.post(apiUrl, jsonData, {
+  axios.post(proxyUrl + apiUrl, jsonData, {
     headers: {
       'Content-Type': 'application/json' // встановлюємо заголовок Content-Type у форматі JSON
     }
