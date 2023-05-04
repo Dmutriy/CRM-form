@@ -1011,49 +1011,50 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- JavaScript-код для обробки відправки форми -->
-    <script>
-      // Отримання посилання на форму
-      const form = document.querySelector("#myForm");
+<script>
+  // Отримання посилання на форму
+  const form = document.querySelector('#myForm');
 
-      // Додавання події "submit" до форми
-      form.addEventListener("submit", function (event) {
-        // Зупиняємо стандартну поведінку форми
-        event.preventDefault();
+  // Додавання події "submit" до форми
+  form.addEventListener('submit', function(event) {
+    // Зупиняємо стандартну поведінку форми
+    event.preventDefault();
 
-        // Отримання значень полів форми
-        const name = document.querySelector(
-          'input[name="name"]'
-        ).value;
-        const phone = document.querySelector(
-          'input[name="phone"]'
-        ).value;
+    // Отримання значень полів форми
+    const name = document.querySelector('input[name="name"]').value;
+    const phone = document.querySelector('input[name="phone"]').value;
 
-        // Підготовка даних для відправки
-   const data = {
+    // Підготовка даних для відправки
+    const data = {
       form: "vcpf8t66SEnVvwxWpcqB4FTAN1wZdpsbUAt-E5QoFoRfDOEqRvIMiz3W6qAtgwFcBdL3U_ys9p",
       fName: name,
       phone: phone
     };
 
-        // Відправка POST-запиту з використанням Axios
-        axios
-          .post(
-            "https://hayali.salesdrive.me/handler/",
-            data
-          )
-          .then(function (response) {
-            // Обробка успішної відповіді від сервера
-            console.log(response.data);
-            // Додаткові дії після відправки заявки, якщо потрібно
-          })
-          .catch(function (error) {
-            // Обробка помилки при відправці до сервера
-            console.error(error);
-            // Додаткові дії в разі невдалої відправки заявки, якщо потрібно
-          });
-      });
-    </script>
+const jsonData = JSON.stringify(data);
+console.log('jsonData', jsonData);
 
+
+    // Встановлення URL-адреси проксі-сервера
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
+    // Встановлення URL-адреси запиту
+    const apiUrl = 'https://hayali.salesdrive.me/handler/';
+
+    // Відправка POST-запиту через проксі-сервер
+    axios.post(proxyUrl + apiUrl, jsonData)
+      .then(function(response) {
+        // Обробка успішної відповіді від сервера
+        console.log(response.data);
+        // Додаткові дії після відправки заявки, якщо потрібно
+      })
+      .catch(function(error) {
+        // Обробка помилки при відправці до сервера
+        console.error(error);
+        // Додаткові дії в разі невдалої відправки заявки, якщо потрібно
+      });
+  });
+</script>
     <!-- Scripts  -->
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/jquery.countdown.js"></script>
