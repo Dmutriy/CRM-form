@@ -969,8 +969,8 @@ h6 {
   width: 100%;
 }
 .first-screen {
-  background: url(../images/bg/1.png) no-repeat center
-    bottom / cover;
+  background: url(../images/8.png) no-repeat center bottom /
+    cover;
   padding: 20rem 0;
 }
 .main-title {
@@ -1278,6 +1278,127 @@ h6 {
   width: 5px;
 }
 /* ===== Custom Styles END =====*/
+
+/* modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 70px 20px;
+  border: 1px solid #888;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.modal-header h2 {
+  text-align: center;
+}
+
+.uno {
+  display: flex;
+}
+
+.wisible {
+  display: flex;
+}
+.wisible-mob {
+  display: none;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.left {
+  width: 52%;
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.left img {
+  border: 4px solid palevioletred;
+  border-radius: 15px;
+  width: calc((100% - 60px) / 3);
+}
+
+.right {
+  background: var(--main-color);
+  padding: 5px 20px;
+  border-radius: 40px;
+  display: block;
+  color: #fff;
+  font-family: "bebas_neue_cyrillicregular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 1;
+}
+
+.price_sale {
+  display: flex;
+  color: var(--main-color);
+  font-family: "bebas_neue_cyrillicregular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16.6rem;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.ml {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.sale-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tho {
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
 
 /* ds
 

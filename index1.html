@@ -953,41 +953,29 @@
                   <a href="#" class="logo">
                     <img src="images/logo.png" alt="" />
                   </a>
-                  <!-- <form action="">
-									<div class="input-wrapper mb-5">
-										<input type="text" placeholder="ВАШЕ ІМ'Я">	
-									</div>
-									<div class="input-wrapper">
-										<input type="tel" placeholder="НОМЕР ТЕЛЕФОНУ">	
-									</div>
-									<div class="btn-container mt-5">
-										<button class="btn btn--red">ЗАЛИШИТИ ЗАЯВКУ</button>
-									</div>
-								</form> -->
-                  <form id="myForm">
-                    <div class="input-wrapper mb-5">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="ВАШЕ ІМ'Я"
-                      />
-                    </div>
-                    <div class="input-wrapper">
-                      <input
-                        type="tel"
-                        name="phone"
-                        placeholder="НОМЕР ТЕЛЕФОНУ"
-                      />
-                    </div>
-                    <div class="btn-container mt-5">
-                      <button
-                        class="btn btn--red"
-                        type="submit"
-                      >
-                        ЗАЛИШИТИ ЗАЯВКУ
-                      </button>
-                    </div>
-                  </form>
+                  <div>
+                    <script id="salesdrive_forms_params_2">
+                      const salesdrive_forms_params_2 = {
+                        id: "2",
+                        hash: "MlRNokKG01h4eu4w_5DoOO986Tyu0Wia",
+                        modal: "n",
+                        locale: "ua",
+                        defaults: {
+                          submit: "",
+                          "sd-form-title": "",
+                          lName: "",
+                          fName: "",
+                          phone: "+380",
+                        },
+                      };
+                    </script>
+                    <script
+                      forms-id="2"
+                      id="salesdriveforms_script"
+                      async="async"
+                      src="https://static.salesdrive.me/salesdriveforms/assets/js/salesdriveforms.js"
+                    ></script>
+                  </div>
                 </div>
               </div>
             </div>
@@ -996,59 +984,74 @@
       </main>
       <div class="popup-overlay"></div>
     </div>
-
-    <!-- Scripts  -->
-
-    <!-- // Підключення Axios -->
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="main-title text--uppercase">
+            Пропонуємо<button
+              class="close"
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </h2>
+        </div>
+        <div class="modal-body">
+          <div class="left wisible">
+            <img src="./images/img13.png" />
+            <img src="./images/img14.png" />
+            <img src="./images/img15.png" />
+            <img src="./images/img16.png" />
+            <img src="./images/img18.png" />
+            <img src="./images/img19.png" />
+          </div>
+          <div class="wisible-mob">
+            <img src="./images/img13.png" />
+          </div>
+          <div class="sale-wrap">
+            <div class="right">
+              <!-- <p class="text--uppercase text--center"> -->
+              <p class="text--uppercase text--center">
+                Супер ціна
+              </p>
+            </div>
+            <p class="price_sale">60 грн</p>
+          </div>
+        </div>
+        <div class="ml">
+          <p class="main-title text--uppercase uno">
+            Пішманіє <span class="ml"> 200 г</span>
+          </p>
+          <p
+            class="main-title text--uppercase tho wisible-mob"
+          >
+            Пішманіє з полуницею
+            <span class="ml"> 200г</span>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button
+            onclick="location.href='https:hayali.store/ua/catalog/Shidni-solodoschi/Pishmanie-z-poluniceyu-200-g'"
+            class="btn-container flex btn btn--red sm-scroll"
+          >
+            Перейти на сайт
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script>
-      // Отримання посилання на форму
-      const form = document.querySelector("#myForm");
+      // Отримуємо модальне вікно
+      const modal = document.getElementById("myModal");
 
-      // Додавання події "submit" до форми
-      form.addEventListener("submit", function (event) {
-        // Зупиняємо стандартну поведінку форми
-        event.preventDefault();
+      // Функція, яка відкриває модальне вікно
+      function openModal() {
+        modal.style.display = "block";
+      }
 
-        // Отримання значень полів форми
-        const name = document.querySelector(
-          'input[name="name"]'
-        ).value;
-        const phone = document.querySelector(
-          'input[name="phone"]'
-        ).value;
-
-        // Підготовка даних для відправки
-        const data = {
-          form: "vcpf8t66SEnVvwxWpcqB4FTAN1wZdpsbUAt-E5QoFoRfDOEqRvIMiz3W6qAtgwFcBdL3U_ys9p",
-          fName: name,
-          phone: phone,
-        };
-
-        const jsonData = JSON.stringify(data);
-
-        console.log("jsonData", jsonData);
-
-        // Відправка POST-запиту з використанням Axios
-        axios
-          .post(
-            "https://hayali.salesdrive.me/handler/Content-Type: application/json",
-            jsonData
-          )
-          .then(function (response) {
-            // Обробка успішної відповіді від сервера
-            console.log(response.data);
-            // Додаткові дії після відправки заявки, якщо потрібно
-          })
-          .catch(function (error) {
-            // Обробка помилки при відправці до сервера
-            console.error(error);
-            // Додаткові дії в разі невдалої відправки заявки, якщо потрібно
-          });
-      });
+      // Встановлюємо затримку в 5 секунд перед викликом функції openModal
+      setTimeout(openModal, 3000);
     </script>
-
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/jquery.countdown.js"></script>
     <script src="js/custom.js"></script>
